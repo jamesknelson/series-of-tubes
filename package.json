@@ -1,12 +1,16 @@
 {
   "name": "series-of-tubes",
   "author": "James K Nelson <james@jamesknelson.com>",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Utility for passing typed messages between windows and frames",
   "license": "MIT",
   "main": "dist/cjs/SeriesOfTubes.js",
   "module": "dist/es/SeriesOfTubes.js",
   "types": "dist/types/SeriesOfTubes.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesknelson/series-of-tubes.git"
+  },
   "files": [
     "dist/*"
   ],
