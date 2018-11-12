@@ -1,0 +1,23 @@
+{
+  "name": "series-of-tubes",
+  "author": "James K Nelson <james@jamesknelson.com>",
+  "version": "0.1.0",
+  "description": "Utility for passing typed messages between windows and frames",
+  "license": "MIT",
+  "main": "dist/cjs/SeriesOfTubes.js",
+  "module": "dist/es/SeriesOfTubes.js",
+  "types": "dist/types/SeriesOfTubes.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build:commonjs": "tsc --pretty --module commonjs --outDir dist/cjs",
+    "build:es": "tsc --pretty --module es2015 --outDir dist/es",
+    "build:types": "tsc --pretty --declaration --declarationDir dist/types --emitDeclarationOnly",
+    "build": "npm run build:types && npm run build:commonjs && npm run build:es",
+    "build:watch": "npm run build:es -- --watch"
+  },
+  "devDependencies": {
+    "typescript": "3.1.6"
+  }
+}
